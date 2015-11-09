@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_inner"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!-->-->
+    <!--&lt;!&ndash;android:paddingBottom="@dimen/header_footer_top_bottom_padding"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingLeft="@dimen/header_footer_left_right_padding"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingRight="@dimen/header_footer_left_right_padding"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingTop="@dimen/header_footer_top_bottom_padding"&ndash;&gt;-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="left|center_vertical">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/mouse_icon"-->
+    <!--android:layout_width="51dp"-->
+    <!--android:layout_height="43dp"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:src="@drawable/mouse_icon"/>-->
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_toRightOf="@+id/mouse_icon"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@drawable/index__pull_flush"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="20dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="20dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:id="@+id/wetrip_flush"-->
+    <!--android:layout_width="151dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:src="@drawable/index__pull_flush"-->
+    <!--android:layout_gravity="center_horizontal"/>-->
+
+    <!--</FrameLayout>-->
+
+    <!--</FrameLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mouse_icon"
+            android:layout_width="51dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/mouse_icon"/>
+        <!--<ImageView-->
+        <!--android:id="@+id/center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@+id/mouse_icon"-->
+        <!--android:src="@drawable/index__pull_flush"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--/>-->
+        <ImageView
+            android:id="@+id/wetrip_flush"
+            android:layout_width="151dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/index__pull_flush"/>
+    </RelativeLayout>
+
+</LinearLayout>

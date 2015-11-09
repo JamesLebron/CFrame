@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/calender_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:layout_marginTop="13dp"
+        android:id="@+id/title"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/title_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/month_title_size"
+                android:textColor="#333333"
+                />
+
+            <TextView
+                android:id="@+id/title_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/month_title_size"
+                android:textColor="@color/cxd_green"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/week"
+        >
+
+        <TextView
+            android:id="@+id/week0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周日"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周一"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周二"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周三"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周四"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周五"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周六"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        >
+
+        <include
+            android:id="@+id/day1"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"/>
+
+
+        <include
+            android:id="@+id/day2"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day4"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day5"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day6"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day7"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        >
+
+
+        <include
+            android:id="@+id/day1"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"/>
+
+
+        <include
+            android:id="@+id/day2"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day4"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day5"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day6"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day7"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        >
+
+
+        <include
+            android:id="@+id/day1"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"/>
+
+
+        <include
+            android:id="@+id/day2"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day4"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day5"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day6"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day7"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        >
+
+
+        <include
+            android:id="@+id/day1"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"/>
+
+
+        <include
+            android:id="@+id/day2"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day4"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day5"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day6"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day7"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        >
+
+
+        <include
+            android:id="@+id/day1"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"/>
+
+
+        <include
+            android:id="@+id/day2"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day4"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day5"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day6"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day7"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        >
+
+        <include
+            android:id="@+id/day1"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"/>
+
+
+        <include
+            android:id="@+id/day2"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day3"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day4"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day5"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day6"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+
+        <include
+            android:id="@+id/day7"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/calender_cube"
+            android:layout_marginLeft="@dimen/calender_magen_left"/>
+    </LinearLayout>
+</LinearLayout>

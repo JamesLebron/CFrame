@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AnnmitionViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ClockText">
+        <attr name="mFormat" format="string">
+            <!--<enum name="yyyy-MM-dd hh:mm:ss"  value="yyyy-MM-dd hh:mm:ss"/>-->
+            <!--<enum name="yyyy年MM月dd日 hh:mm:ss" value="yyyy年MM月dd日 hh:mm:ss"/>-->
+            <!--<enum name="yyyy年MM月dd日" value="yyyy年MM月dd日"/>-->
+            <!--<enum name="yyyy/MM/dd hh:mm:ss" value="yyyy/MM/dd hh:mm:ss"/>-->
+            <!--<enum name="hh:mm:ss" value="hh:mm:ss"/>-->
+        </attr>
+        <attr name="updateTime" format="integer">
+            <!--<enum name="1s" value="1000"/>-->
+            <!--<enum name="2s" value="2000"/>-->
+            <!--<enum name="1min" value="60000"/>-->
+            <!--<enum name="30min" value="1800000"/>-->
+            <!--<enum name="1h" value="3600000"/>-->
+            <!--<enum name="1day" value="86400000"/>-->
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DayPickerView">
+        <attr name="colorCurrentDay" format="color" />
+        <attr name="colorSelectedDayBackground" format="color" />
+        <attr name="colorSelectedDayText" format="color" />
+        <attr name="colorPreviousDay" format="color" />
+        <attr name="colorNormalDay" format="color" />
+        <attr name="colorMonthName" format="color" />
+        <attr name="colorDayName" format="color" />
+        <attr name="textSizeDay" format="dimension" />
+        <attr name="textSizeMonth" format="dimension" />
+        <attr name="textSizeDayName" format="dimension" />
+        <attr name="headerMonthHeight" format="dimension" />
+        <attr name="selectedDayRadius" format="dimension" />
+        <attr name="calendarHeight" format="dimension" />
+        <attr name="enablePreviousDay" format="boolean" />
+        <attr name="currentDaySelected" format="boolean" />
+        <attr name="drawRoundRect" format="boolean" />
+        <attr name="canRangeSelect" format="boolean" />
+        <attr name="firstMonth" format="enum">
+            <enum name="january" value="0" />
+            <enum name="february" value="1" />
+            <enum name="march" value="2" />
+            <enum name="april" value="3" />
+            <enum name="may" value="4" />
+            <enum name="june" value="5" />
+            <enum name="july" value="6" />
+            <enum name="august" value="7" />
+            <enum name="september" value="8" />
+            <enum name="october" value="9" />
+            <enum name="november" value="10" />
+            <enum name="december" value="11" />
+        </attr>
+        <attr name="lastMonth" format="enum">
+            <enum name="january" value="0" />
+            <enum name="february" value="1" />
+            <enum name="march" value="2" />
+            <enum name="april" value="3" />
+            <enum name="may" value="4" />
+            <enum name="june" value="5" />
+            <enum name="july" value="6" />
+            <enum name="august" value="7" />
+            <enum name="september" value="8" />
+            <enum name="october" value="9" />
+            <enum name="november" value="10" />
+            <enum name="december" value="11" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CirclePageIndicator">
+        <attr name="indicator_spacing" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerExtensions">
+
+        <attr name="fadeOutDelay" format="integer" />
+        <attr name="fadeOutDuration" format="integer" />
+
+        <attr name="textColorSelected" format="color" />
+
+        <attr name="lineColor" format="color" />
+        <attr name="lineColorSelected" format="color" />
+
+        <attr name="lineHeight" format="dimension" />
+        <attr name="lineHeightSelected" format="dimension" />
+
+        <attr name="dividerColor" format="color" />
+        <attr name="dividerMarginTop" format="dimension" />
+        <attr name="dividerMarginBottom" format="dimension" />
+        <attr name="spacingExtra" format="dimension" />
+        <attr name="dividerDrawable" format="reference" />
+
+        <attr name="outsideOffset" format="dimension" />
+
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorDefaultColor" format="color" />
+        <attr name="pstsIndicatorUpdateColor" format="color" />
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsIndicatorSpace" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="IntegrationColorPicker">
+        <attr name="circleRadius" format="dimension"></attr>
+        <attr name="drawStyle" format="integer"></attr>
+        <attr name="loosenColor" format="color"></attr>
+        <attr name="pressColor" format="color"></attr>
+        <attr name="roundRadius" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBarView">
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starCount" format="integer" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starFill" format="reference" />
+        <attr name="starHalf" format="reference" />
+        <attr name="ratingCount" format="float" />
+        <attr name="isClickable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="pull">
+        <attr name="header" format="reference|integer" />
+        <attr name="maxHeaderHeight" format="reference|dimension" />
+        <attr name="minHeaderHeight" format="reference|dimension" />
+        <attr name="topBarHeight" format="reference|dimension" />
+    </declare-styleable>
+
+</resources>

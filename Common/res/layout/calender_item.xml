@@ -1,0 +1,1845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/calender_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:layout_marginTop="13dp"
+        android:id="@+id/title"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/title_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/month_title_size"
+                android:textColor="#333333"
+                />
+
+            <TextView
+                android:id="@+id/title_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/month_title_size"
+                android:textColor="@color/cxd_green"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/week"
+        >
+
+        <TextView
+            android:id="@+id/week0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周日"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周一"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周二"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周三"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周四"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周五"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/week6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周六"
+            android:textSize="@dimen/month_title_size"
+            android:textColor="#444444"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <!--eb-->
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day1_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day1_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day1_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day2"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day2_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day2_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day2_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day3"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day3_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day3_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day3_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day4"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day4_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day4_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day4_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day5"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day5_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day5_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day5_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/day6"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day6_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day6_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day6_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day7"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day7_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day7_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day7_price"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day8"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day8_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day8_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day8_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day9"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day9_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day9_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day9_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day10"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day10_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day10_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day10_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/day11"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day11_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day11_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day11_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day12"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day12_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day12_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day12_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day13"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day13_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day13_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day13_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day14"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day14_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day14_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day14_price"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day15"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day15_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day15_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day15_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/day16"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day16_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day16_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day16_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day17"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day17_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day17_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day17_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/day18"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day18_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day18_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day18_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day19"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day19_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day19_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day19_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day20"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day20_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day20_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day20_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day21"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day21_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day21_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day21_price"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day22"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day22_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day22_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day22_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day23"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day23_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day23_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day23_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day24"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day24_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day24_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day24_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day25"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day25_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day25_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day25_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day26"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day26_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day26_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day26_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day27"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day27_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day27_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day27_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day28"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day28_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day28_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day28_price"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day29"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day29_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day29_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day29_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day30"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day30_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day30_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day30_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day31"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day31_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day31_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day31_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day32"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day32_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day32_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day32_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day33"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day33_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day33_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day33_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day34"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day34_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day34_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day34_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day35"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day35_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day35_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day35_price"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day36"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day36_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day36_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day36_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day37"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day37_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day37_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day37_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day38"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day38_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day38_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day38_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day39"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day39_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day39_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day39_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day40"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day40_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day40_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day40_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day41"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day41_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day41_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day41_price"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/month_title_size"
+            android:layout_weight="1"
+            android:id="@+id/day42"
+            android:layout_marginLeft="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/day42_num"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:textSize="8sp"
+                android:textColor="#FD8E3B"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day42_surplus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_marginRight="5dp"
+                android:id="@+id/day42_price"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

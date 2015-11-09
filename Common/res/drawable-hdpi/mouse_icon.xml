@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/mouse_icon1"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon2"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon3"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon4"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon5"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon6"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon7"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon8"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon9"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon10"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon11"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/mouse_icon12"
+        android:duration="150"></item>
+
+</animation-list>
